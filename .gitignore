@@ -17,3 +17,8 @@ static
 .\#*
 .project
 .env
+venv/
+bucket-access.json
+.idea/
+# avoid comitting app.yaml with credentials
+app.yaml

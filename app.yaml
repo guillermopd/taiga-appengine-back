@@ -1,0 +1,20 @@
+runtime: python37
+service: taiga-backend
+
+env_variables:
+  DJANGO_LOG_LEVEL: 'DEBUG'
+  DJANGO_SETTINGS_MODULE: 'settings.gae'
+  REGION: 'europe-west'
+  DB_REGION: 'europe-west1'
+  SQL_NAME: 'taiga-gae-db'
+  SQL_TIER: 'db-f1-micro'
+  SQL_USER: 'taiga'
+  SQL_PASS: 'taiga'
+  SMTP_HOST: ''
+  SMTP_USER: ''
+  SMTP_PASS: ''
+  GS_BACKEND_BUCKET: 'taiga-backend-files'
+
+handlers:
+  - url: /.*
+    script: auto
