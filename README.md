@@ -52,6 +52,8 @@ python manage.py compilemessages
 python manage.py collectstatic --noinput
 ```
 
+Edit app.yaml file and set the variables to match your environemnt configuration
+
 Finally, we're ready to deploy the backend service:
 
 ```shell script
